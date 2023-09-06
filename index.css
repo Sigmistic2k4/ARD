@@ -1,0 +1,65 @@
+
+.nav-colored{
+    background: #8B8BDA;
+    opacity: 0.30;
+}
+.nav-transparent{
+    background: rgb(7, 34, 61);
+}
+
+.container{
+  width: 1000px;
+  overflow: hidden;
+ 
+}
+.container .text{
+  position: relative;
+  color: #4070F4;
+  font-size: 30px;
+  font-weight: 600;
+}
+.container .text.first-text{
+  color: #FFF;
+}
+.navbarcolor{
+cursor: pointer;
+}
+
+.Routingpage{
+  cursor: pointer;
+}
+.loader{
+  z-index: 1000;
+  position:fixed;
+  top:0;
+  left: 0;
+  width:100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:black;
+  transition: opacity 2s ,visibility 2s;
+}
+.loader-hidden{
+  opacity:0;
+  visibility: hidden;
+}
+.loader::after{
+  content:"";
+  width:75px;
+  height:75px;
+  border: 10px solid #dddddd;
+  border-top-color: #45b8d2;
+  border-radius: 50%;
+  animation: loading 2s ease infinite;
+}
+@keyframes loading{
+from{
+  transform: rotate(0 turn);
+}
+to{
+  transform: rotate(1turn);
+}
+}
+
